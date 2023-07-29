@@ -3,8 +3,8 @@ module Xirr
 
   # Sets as constants all the entries in the Hash Default values
   default_values = {
-      eps:             '1.0e-6'.to_f,
-      period:          365.0,
+      eps:             '5.0e-1'.to_f,
+      period:          365.25,
       iteration_limit: 50,
       precision:       6,
       default_method:  :newton_method,
