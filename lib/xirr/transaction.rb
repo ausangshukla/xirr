@@ -2,7 +2,7 @@
 module Xirr
   # A unit of the Cashflow.
   class Transaction
-    attr_reader :amount, :date
+    attr_reader :amount, :date, :notes
 
     # @example
     #   Transaction.new -1000, date: Date.now
@@ -32,9 +32,13 @@ module Xirr
       @amount = value.to_f || 0.0
     end
 
+    def notes=(value)
+      @notes = value.to_s
+    end
+
     # @return [String]
     def inspect
-      "T(#{@amount},#{@date})"
+      "T(#{@amount},#{@date}, #{@notes})"
     end
 
   end
