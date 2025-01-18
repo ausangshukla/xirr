@@ -29,11 +29,11 @@ module Xirr
     end
 
     inline { |builder|
-      builder.include '<math.h>'
-      builder.c '
-        double xnpv_c(double rate, double amount, double period) {
-          return amount / pow(1 + rate, period);
-        }'
+      #builder.include '<math.h>'
+      #builder.c '
+      #  double xnpv_c(double rate, double amount, double period) {
+      #    return amount / pow(1 + rate, period);
+      #  }'
     }
   end
 end
